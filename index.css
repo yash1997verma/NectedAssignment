@@ -81,18 +81,14 @@ address{
 }
 
 
-
-/* media queries */
+/***** media queries *****/
 
 /* for medium screens */
 @media (max-width: 768px) {
-  
-   
-
     .title{
-        margin-top:24px ;
+        margin-top:34px ;
         width: 100%;
-        font-size: 40px;
+        font-size: 34px;
     } 
     button{
         margin: 20px auto ;
@@ -114,7 +110,9 @@ address{
         align-items: center;
         width: 100vw;
     }
-    
+    .title{
+        font-size: 28px;
+    }
     .emailContent{
         text-align: center;
     }
