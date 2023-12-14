@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+body{
+    font-family: 'Work Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+.templateBox{
+    border: 2px solid #edeff1;
+    border-radius: 20px;
+    box-shadow: inset;
+    box-shadow: 5px 5px 10px 20 px rgba(252, 251, 251, 0.75);
+    padding: 40px;
+}
+header img{
+    width: 100px;
+    margin-bottom: 20px;
+}
+.title{
+    font-size: 38px;
+    font-weight: bolder;
+}
+.message{
+    font-size: 18px;
+}
+button{
+    background-color: #407ef7;
+    border: none;
+    width: 340px;
+    height: 54px;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    padding: 2px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: transform 0.4s ease-in;
+}
+button:hover {
+    transform: scale(0.95); 
+}
+article p:nth-of-type(2){
+    color: #7f8288;
+}
+a{
+    text-decoration: none;
+    color: #407ef7;
+}
+footer{
+    margin-top: 40px;
+    color: #7f8288;
+    display: flex;
+    justify-content: space-between;
+}
+.addressInfo img{
+    width: 100px;
+}
+address{
+    font-style: normal;
+}
+.socials{
+    text-align: right;
+}
+.socials img{
+    margin: 0px 10px;
+    height: fit-content;
+    width: fit-content;
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.4s ease-in;
+}
+.socials img:hover{
+    transform: scale(0.8); 
+
+}
+.socials p{
+    margin: 0;
+}
+
+
+
+/* media queries */
+
+/* for medium screens */
+@media (max-width: 768px) {
+  
+   
+
+    .title{
+        margin-top:24px ;
+        width: 100%;
+        font-size: 40px;
+    } 
+    button{
+        margin: 20px auto ;
+        margin-bottom: 0px;
+        width: 260px;
+    }
+    footer{
+        font-size: 14px;
+        width: 100%;
+    }
+  
+}
+/* for small screens */
+@media (max-width: 640px) {
+    .templateBox{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    }
+    
+    .emailContent{
+        text-align: center;
+    }
+    button{
+        width: fit-content;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .addressInfo img{
+        margin: 0 auto;
+        display: block;
+    }
+    address{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .socials{
+        text-align: center;
+    }
+}
